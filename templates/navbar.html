@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'schedule/styles.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Class Schedule System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'generate_schedule' %}">Generate Schedule</a></li>
+                    <li><a href="/admin">View DB</a></li>
+                    <li><a href="{% url 'download_schedule' %}">Download Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>

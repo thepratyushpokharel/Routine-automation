@@ -1,0 +1,44 @@
+{% include 'navbar.html' %}
+    <main class="main-content">
+        <div class="container">
+            <section id="home" class="intro">
+                <h2>Effortless Class Scheduling</h2>
+                <p>Welcome to the Class Schedule System, designed to streamline the scheduling process for teachers and students. Our system ensures conflict-free timetables and offers easy downloads in Excel format.</p>
+                
+            </section>
+            <section id="about" class="about">
+                <h2>About the System</h2>
+                <p>Our system automates the process of generating and managing class schedules, ensuring no overlap for teachers and providing a user-friendly interface for viewing and downloading schedules.</p>
+            </section>
+            <section id="features" class="features">
+                <h2>Key Features</h2>
+                <div class="feature-box">
+                    <h3>Automatic Schedule Generation</h3>
+                    <p>Quickly generate schedules that avoid conflicts and optimize teaching times.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Conflict-Free Timetables</h3>
+                    <p>Ensure no teacher is double-booked, and all classes run smoothly.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Downloadable Schedules</h3>
+                    <p>Get your schedules in Excel format for easy access and distribution.</p>
+                </div>
+            </section>
+            <section id="cta" class="cta">
+                <h2>Get Started</h2>
+                <a href="{% url 'generate_schedule' %}"><button  class="btn-primary">Generate Schedule</button></a>
+                <a href="{% url 'add_section' %}"><button  class="btn-secondary">Add Section</button></a>
+                <a href="{% url 'add_teacher' %}"><button  class="btn-primary">Add Teacher</button></a>
+                <a href="{% url 'download_schedule' %}"><button  class="btn-secondary">Download Schedule</button></a>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Class Schedule System. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
